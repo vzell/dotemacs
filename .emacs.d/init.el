@@ -18,6 +18,10 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+;; Effectively replace use-package with straight-use-package
+;; https://github.com/raxod502/straight.el#integration-with-use-package
+(straight-use-package 'use-package)
+
 (use-package which-key
   :config (which-key-mode)
   )
