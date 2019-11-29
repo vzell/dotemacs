@@ -30,5 +30,9 @@
   :bind ("C-x g" . magit-status)
   )
 
+(use-package forge
+  :after magit
+  )
+
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
