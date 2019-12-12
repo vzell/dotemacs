@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: straight
+# key: ls
+# --
+(use-package ${1:package-name}
+  :straight (:repo "https://github.com/${2:author}/$1"
+ 		   :branch "${3:master}")

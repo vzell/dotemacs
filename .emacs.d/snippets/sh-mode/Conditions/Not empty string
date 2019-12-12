@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Not empty string
+# key: -c
+# --
+[[ -n "\${${1:STRING}}" ]]

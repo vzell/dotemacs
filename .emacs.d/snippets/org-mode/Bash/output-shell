@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: output-shell
+# key: -be
+# --
+#+begin_example
+$0
+#+end_example

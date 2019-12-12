@@ -1,0 +1,45 @@
+# key: #p
+# name: Presentation Header
+# --
+#+TITLE:       ${1:Enter title here}
+#+AUTHOR:      Dr. Volker Zell
+#+EMAIL:       (concat "volker.zell" at-sign "opitz-consulting.com")
+#+DESCRIPTION: $1
+#+KEYWORDS:    $2
+#+LANGUAGE:    en
+#+OPTIONS:     H:4 toc:t num:2
+#+OPTIONS:     \n:nil
+#+OPTIONS:     ^:nil
+#+PROPERTY:    header-args :padline no
+
+#+SETUPFILE: https://git.volkerzell.de/setup/theme-bigblow-git.setup
+
+* Intro
+
+This *website* has been created with [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org-mode]] and the help of
+[[https://github.com/vzell/org-html-themes][org-html-themes]] during export.
+
+*Keyboard shortcuts* to save time and boost your productivity during reading of
+this website
+
+| Shortcut   | What it does                        |
+|------------+-------------------------------------|
+| =?= or =h= | Access the *dashboard*              |
+| =n=        | Move to the *next* main heading     |
+| =p=        | Move to the *previous* main heading |
+| =b=        | Scroll up                           |
+| =<=        | Scroll to top                       |
+| =>=        | Scroll to bottom                    |
+| =-=        | Collapse all                        |
+| =+=        | Expand all                          |
+| =r=        | Go to next task in list             |
+| =R=        | Go to previous task in list         |
+| =q=        | Stop reviewing the list of tasks    |
+| =g=        | Reload the page                     |
+
+* Goal
+
+$0
+
+* $1
+

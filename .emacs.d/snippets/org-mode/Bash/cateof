@@ -1,0 +1,6 @@
+# key: ceof
+# name: cateof
+# --
+cat > ${1:filename} <<-"_EOF"
+$0
+_EOF
