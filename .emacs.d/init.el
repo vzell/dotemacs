@@ -53,10 +53,10 @@
               ([f6] . vz-org-send-region-to-other-window3)
               ([f7] . vz-org-send-region-to-other-window4)
               ([f8] . vz-org-send-region-to-other-window5)
-              ([f9] . vz-org-send-region-to-other-window6)
+              ([f9] . vz-org-send-region-to-other-window6))
   :custom
   (org-adapt-indentation nil "Finally: do NOT indent body when indenting headlines")
-  ))
+  )
 
 (use-package yasnippet
   :init
