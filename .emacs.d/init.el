@@ -22,6 +22,9 @@
 ;; https://github.com/raxod502/straight.el#integration-with-use-package
 (straight-use-package 'use-package)
 
+;; Generic customization
+(setq-default fill-column 80)
+
 (use-package vz-custom-functions
   :straight (:repo "https://github.com/vzell/emacs-misc.git"
  		   :branch "master")
