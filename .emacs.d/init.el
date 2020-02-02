@@ -75,25 +75,28 @@
 ;; https://emacs.stackexchange.com/questions/32862/ivy-disable-completion-for-a-command-in-minibuffer
 ;; C-M-j (ivy-immediate-done) - Exits with the current input instead of the current candidate
 (use-package ivy
-  :straight t
   :config
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t
 	ivy-count-format "%d/%d "))
 
 (use-package bash-completion
-  :straight t 
   :config (bash-completion-setup))
 
 (use-package docker
-  :straight t
   :bind ("C-c d" . docker))
 
 (use-package dockerfile-mode
-  :straight t)
+  )
 
 (use-package docker-compose-mode
-  :straight t)
+  )
+
+(use-package kubernetes
+  :bind ("C-c k" . kubernetes-overview))
+
+(use-package kubernetes-tramp
+  )
 
 (setq tramp-default-method "ssh")
 
