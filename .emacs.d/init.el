@@ -25,6 +25,20 @@
 ;; Generic customization
 (setq-default fill-column 80)
 
+;; Face definitions
+(defvar shell-output-from-buffer-face 'shell-output-from-buffer-face
+  "Face name to use for 'Output from buffer...' message")
+
+(defface shell-output-from-buffer-face '((t (:background  "orange")))
+  "Face used for highlighting of 'Output from buffer...' messages."
+  :group 'shell)
+
+;; Font lock additions
+(font-lock-add-keywords 'shell-mode
+			'(
+			  ("Output from buffer.*$" 0 shell-output-from-buffer-face)
+			  ))
+
 (use-package vz-custom-functions
   :straight (:repo "https://github.com/vzell/emacs-misc.git"
  		   :branch "master")
