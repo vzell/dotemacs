@@ -23,7 +23,16 @@
 (straight-use-package 'use-package)
 
 ;; Generic customization
-(setq-default fill-column 80)
+;; https://www.reddit.com/r/emacs/comments/js9r52/migrating_to_a_customfileless_setup/
+(use-package emacs
+  :straight (:type built-in)
+  :custom
+  (fill-column 80)
+  )
+
+(use-package paren
+  :config
+  (show-paren-mode t))
 
 ;; Face definitions
 (defvar shell-output-from-buffer-face 'shell-output-from-buffer-face
@@ -114,8 +123,6 @@
 
 (setq tramp-default-method "ssh")
 
-(show-paren-mode t)
-
 (setenv "PAGER" "/bin/cat")
 
 (global-set-key "\C-co" 'occur)
@@ -123,7 +130,7 @@
 ;; Better functionality than using the standard commands
 (defalias 'list-buffers 'ibuffer-other-window) ; make ibuffer default
 
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
+;; (setq custom-file "~/.emacs.d/custom.el")
+;; (load custom-file)
 
 (server-start)
